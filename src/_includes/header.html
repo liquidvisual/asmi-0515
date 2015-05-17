@@ -1,0 +1,39 @@
+{% comment %}
+    IGNORE THIS COMMENT: Interchange code reference for dev self:
+    <img width="200" data-interchange="[/ImageGen.ashx?width=200&image=@logo.Url, (default)], [@logo.Url, (retina)]" alt="@logo.Name">
+{% endcomment %}
+
+{% assign settings = site.data.settings %}
+{% assign logo = "/img/content/logo@2x.png" %}
+
+<div class="row outer-row">
+    <div class="large-5 columns">
+
+        <!-- Logo -->
+        <a class="logo" href="/" title="{{ settings.seo_title }}" itemprop="url">
+            <img src="{{ logo }}" alt="{{ settings.company_title }}" itemprop="logo">
+        </a>
+
+    </div>
+    <div class="large-7 columns text-right">
+
+        <div class="row show-for-large-up">
+            <div class="large-4 large-offset-2 columns">
+                <a class="button login-button tiny radius"><i class="fi-lock"></i>&nbsp; Members Login</a>
+            </div>
+            <div class="large-6 columns">
+                <form class="search-form">
+                    <input type="text" placeholder="SEARCH">
+                </form>
+            </div>
+        </div> <!-- .row -->
+
+        <p class="global-header-tagline text-left large-text-right show-for-medium-up">"Advancing Consumer Health through Responsible Self Care"</p>
+
+    </div>
+</div>
+
+<!-- Hamburger -->
+<div class="global-header-mobile-menu hide-for-large-up">
+    <a href="#"> <span class="hamburger"><span class="hamburger-icon"></span></span></a>
+</div>
