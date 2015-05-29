@@ -1,0 +1,4 @@
+{% capture body %}
+	{% include snippets/side_nav_i.html exclude_top_level=true %}
+{% endcapture %}
+{% include feature_panel.html title=page.title icon=page.icon body=body %}

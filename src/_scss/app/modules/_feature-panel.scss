@@ -1,0 +1,73 @@
+/*
+    FEATURE-PANEL.CSS
+
+    - Last updated: 28.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Feature Panel
+//-----------------------------------------------------------------
+
+.feature-panel {
+	margin-bottom: rem-calc(20);
+	overflow: hidden;
+
+	@media #{$medium-up} {
+		margin-bottom: rem-calc(30);
+	}
+}
+
+//=========================================
+// Contexts
+//=========================================
+
+.global-sidebar .feature-panel  {
+	margin-bottom: 0;
+
+	.feature-panel-body {
+		padding: rem-calc(0 0 30 0);
+		height: auto;
+	}
+}
+
+//=========================================
+// Feature Panel
+//=========================================
+
+.feature-panel-body {
+	padding: rem-calc(20 20 20 20);
+	border-radius: 0 0 ($global-radius * 2) ($global-radius * 2);
+	overflow: hidden;
+	background: white;
+
+	border: 1px solid darken(#D9E5F6, 10%);
+	border-top: 0;
+
+	@media #{$medium-up} {
+		height: rem-calc(420);
+	}
+}
+
+.feature-panel .header {
+	background: $primary-color;
+	background-size: contain;
+	padding: rem-calc(0 15);
+	border-radius: ($global-radius * 2) ($global-radius * 2) 0 0;
+
+	h3 {
+		color: white;
+		padding: rem-calc(10);
+		margin: 0;
+
+		i {
+			color: $secondary-color;
+		}
+	}
+}
+
+//=========================================
+//
+//=========================================

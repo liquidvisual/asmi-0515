@@ -16,5 +16,31 @@
 }
 
 //=========================================
+// Google Map Patch
+//=========================================
+
+.google-map {
+    width: 100%;
+    height: 100%;
+
+    img {
+        max-width: inherit;
+    }
+}
+
+.touch .google-map {
+    pointer-events: none;
+}
+
+//=========================================
 //
 //=========================================
+
+.twitter-timeline[style] {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.customisable-border {
+    border: medium none;
+}

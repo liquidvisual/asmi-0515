@@ -15,6 +15,15 @@
 	// position: absolute; // locked
 	// width: 100%; // locked
     // z-index: 1;
+
+    .outer-row {
+        padding: 0;
+
+        > .columns {
+            // padding: rem-calc(0 13);
+            padding: 0;
+        }
+    }
 }
 
 // Fixes glitch with MMenu changing viewport widths when scrollbar disappears
@@ -69,10 +78,16 @@
 	line-height: rem-calc(44);
 	padding: rem-calc(0 15);
     color: white;
+    font-weight: 600;
 
 	&:hover {
 		background: darken($primary-color, 15%);
+        color: white;
 	}
+
+    &:hover i {
+        color: white;
+    }
 }
 
 //-----------------------------------------------------------------
@@ -93,7 +108,7 @@
 }
 
 .topbar a:active,
-.topbar .active > a {
+.topbar li.active > a {
     background: $secondary-color;
     color: $primary-color;
 }

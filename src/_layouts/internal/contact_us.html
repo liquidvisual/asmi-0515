@@ -1,0 +1,42 @@
+---
+layout: internal
+---
+
+{% assign settings = site.data.settings %}
+
+<div class="row">
+	<div class="large-6 columns">
+		<h4>{{ settings.company }}</h4>
+		<p><i class="fa fa-map-marker"></i>&nbsp; {{ settings.office_address }}</p>
+
+		<h4>Postal Address</h4>
+		{{ settings.postal_address | markdownify }}
+		<p>
+			<i class="fa fa-phone"></i>&nbsp; <a href="tel:{{settings.standard.phone}}">{{ settings.standard.phone }}</a>
+			<br>
+			<i class="fa fa-fax"></i>&nbsp; <a href="tel:{{settings.standard.fax}}">{{ settings.standard.fax }}</a><br>
+			<i class="fa fa-envelope"></i>&nbsp; <a href="tel:{{settings.standard.email}}">{{ settings.standard.email }}</a>
+		</p>
+
+		<h4>For Advertising Services, Please Use:</h4>
+		<p>
+			<i class="fa fa-phone"></i>&nbsp; <a href="tel:{{settings.advertising.phone}}">{{ settings.advertising.phone }}</a>
+			<br>
+			<i class="fa fa-fax"></i>&nbsp; <a href="tel:{{settings.advertising.fax}}">{{ settings.advertising.fax }}</a><br>
+			<i class="fa fa-envelope"></i>&nbsp; <a href="tel:{{settings.advertising.email}}">{{ settings.advertising.email }}</a>
+		</p>
+
+		<h4>Accounts Enquiries</h4>
+		<p>
+			<i class="fa fa-envelope"></i>&nbsp; <a href="tel:{{settings.accounts.email}}">{{ settings.accounts.email }}</a>
+		</p>
+
+		<p><strong>ABN</strong> {{ settings.abn }}</a></p>
+
+	</div>
+	<div class="large-6 columns">
+		<div class="google-map-wrapper">
+			{% include google_map.html %}
+		</div>
+	</div>
+</div>

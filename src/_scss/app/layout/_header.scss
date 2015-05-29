@@ -19,8 +19,11 @@ $header-height-medium: rem-calc(110);
 	position: relative; // for hamburger
 	height: $header-height-small;
 	overflow: hidden;
-	background: white;
 	border-bottom: 2px solid $primary-color;
+
+	@media #{$small-only} {
+	    background: white;
+	}
 
 	@media #{$medium-up} {
 	    height: $header-height-medium;
@@ -28,6 +31,7 @@ $header-height-medium: rem-calc(110);
 	}
 
 	.outer-row {
+		@include white-bg();
 		padding-top: rem-calc(10);
 
 		@media #{$medium-up} {

@@ -25,9 +25,9 @@
 // App Unique
 //-----------------------------------------------------------------
 
+@import "app/base/mixins";
 @import "app/base/fonts";
 @import "app/base/global";
-@import "app/base/mixins";
 @import "app/base/variables";
 
 //=========================================
@@ -54,7 +54,9 @@
 // Modules
 //=========================================
 
+@import "app/modules/feature-panel";
 @import "app/modules/gallery";
+@import "app/modules/google-map";
 @import "app/modules/hero";
 @import "app/modules/media";
 @import "app/modules/modules";

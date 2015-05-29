@@ -20,10 +20,6 @@ html, body {
     //}
 }
 
-body.legacy-theme {
-    background: $primary-color;
-}
-
 html {
     overflow-x: hidden;
 }
@@ -33,28 +29,31 @@ html {
     height: 100%;
 }
 
+.lv-page {
+    // @include white-bg();
+}
+
 .outer-row {
+    // box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+}
+
+.content .outer-row {
+    @include white-bg();
+
+    @media #{$large-up} {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAABCAYAAADO+FcMAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABV0RVh0Q3JlYXRpb24gVGltZQAyOC81LzE1LDw07wAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAA6SURBVFiF7c4BCYBAFAWw90VEDHEV7F/gMlwWFbSFImwJVn2cdwB+YFsre0uOqizXlMxfjwAAAHjDAw8vBf66ZQrVAAAAAElFTkSuQmCC);
+        background-size: contain;
+    }
+}
+
+.global-sidebar,
+.main {
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(0);
+
     @media #{$medium-up} {
-        position: relative;
-        overflow: hidden;
-
-        &:before,
-        &:after {
-            content: "";
-            display: block;
-            width: 10px;
-            // height: 100vh;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: $secondary-color;
-        }
-
-        &:after {
-            left: auto;
-            right: 0;
-        }
+        padding-top: rem-calc(30);
+        padding-bottom: rem-calc(30);
     }
 }
 

@@ -3,30 +3,111 @@
 
 - title: About
   url: /about/
+  include_children_in_nav: false
+  children:
+    - title: Committee of Management
+      url: /about/committee-of-management/
+    - title: ASMI Secretariat
+      url: /about/asmi/secretariat/
+    - title: Strategic Plan
+      url: /about/strategic-plan/
+    - title: ASMI Code of Practice
+      url: /about/asmi-code-of-practice/
+      include_children_in_nav: false
+      children:
+        - title: About the ASMI Code
+          url: /about/asmi-code-of-practice/about-the-asmi-code/
+        - title: ASMI Code Determinations
+          url: /about/asmi-code-of-practice/asmi-code-determinations/
+        - title: Meditation Process
+          url: /about/asmi-code-of-practice/meditation-process/
 
 - title: Membership
   url: /membership/
   include_children_in_nav: false
   children:
-    - title: Service One
-      url: /services/service-one/
-    - title: Service Two
-      url: /services/service-two/
+    - title: Join ASMI
+      url: /membership/join-asmi/
+    - title: ASMI Members
+      url: /membership/asmi-members/
 
 - title: Self Care
   url: /self-care/
+  include_children_in_nav: false
+  children:
+    - title: What is Self Care?
+      url: /self-care/what-is-self-care/
+    - title: Self Care Research
+      url: /self-care/self-care-research/
+    - title: Life Education Partnership
+      url: /self-care/life-education-partnership/
+    - title: Creating a Self Care Alliance
+      url: /self-care/creating-a-self-care-alliance/
 
 - title: "News & Information"
   url: /news-and-information/
+  include_children_in_nav: false
+  children:
+    - title: "News / Media Releases"
+      url: /news-and-info/news-media-releases/
+    - title: Annual Reports
+      url: /news-and-info/annual-reports/
+    - title: Information for Consumers
+      url: /news-and-info/information-for-consumers/
+    - title: "Industry Info & Services"
+      url: /news-and-info/Industry-info-and-services/
 
 - title: Events
   url: /events/
+  include_children_in_nav: false
+  children:
+    - title: ASMI Events
+      url: /events/asmi-events/
+    - title: ASMI Awards
+      url: /events/asmi-awards/
+    - title: Other Industry Events
+      url: /events/other-industry-events/
+    - title: ASMI Training
+      url: /events/asmi-training/
 
 - title: Advertising
   url: /advertising/
+  include_children_in_nav: false
+  children:
+    - title: Advertising Therapeutic Goods
+      url: /advertising/advertising-therapeutic-goods/
+    - title: Advertising Codes
+      url: /advertising/advertising-codes/
+    - title: Advertising Approvals
+      url: /advertising/advertising-approvals/
+    - title: Complaints About Advertising
+      url: /advertising/complains-about-advertising/
+    - title: Promotional Monitoring Panel
+      url: /advertising/promotional-monitoring-panel/
+    - title: Social Media Guidelines
+      url: /advertising/social-media-guidelines/
 
-#- title: Members Only
-#  url: /members/
+- title: Members Only
+  url: /members-only/
+  include_in_nav: true
+  include_children_in_nav: false
+  children:
+    - title: "Key ASMI & Industry Documents"
+      url: /members-only/key-asmi-and-industry-documents/
+    - title: "Submissions & Papers"
+      url: /members-only/submissions-and-papers/
+    - title: "Scientific Tech & Reg"
+      url: /members-only/scientific-tech-and-reg/
+    - title: Committees
+      url: /members-only/committees/
+    - title: "Call for Comment & Alerts"
+      url: /members-only/call-for-comment-and-alers/
+    - title: ASMI TGAC Advertising FAQs
+      url: /members-only/asmi-tgac-advertising-faqs/
+    - title: ASMI Newsletters
+      url: /members-only/asmi-newsletters/
+    - title: Logout
+      url: /members-only/logout/
 
 - title: Contact Us
   url: /contact-us/

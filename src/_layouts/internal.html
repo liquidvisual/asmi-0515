@@ -1,27 +1,29 @@
 ---
 layout: master
+exclude_top_level: true
 ---
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-header">
-        <div class="row outer-row">
-            <div class="columns">
-                <div class="animated fadeInLeft">
-                    <h1>{{ page.title }}</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- BREADCRUMBS -->
-<nav class="breadcrumbs-bar">
+<!-- <nav class="breadcrumbs-bar">
     <div class="row collapse outer-row">
         <div class="columns">
             {% include snippets/breadcrumbs.html %}
         </div>
     </div>
-</nav>
+</nav> -->
 
-{{ content }}
+<section class="content">
+    <div class="row outer-row">
+        <div class="large-3 columns">
+            <aside class="global-sidebar">
+                {% include sidebar.html %}
+            </aside>
+        </div>
+        <div class="large-9 columns">
+            <main class="main">
+                <h1>{{ page.title }}</h1>
+                {{ content }}
+            </main>
+        </div>
+    </div>
+</section>
