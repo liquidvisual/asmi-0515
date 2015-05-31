@@ -19,7 +19,9 @@
 		}
 	}
 
-	margin-bottom: rem-calc(30);
+	@media #{$large-up} {
+	    margin-bottom: rem-calc(30);
+	}
 
 	.outer-row {
 		// background: darken($primary-color, 10%);

@@ -37,7 +37,7 @@
 
 .topbar {
 	// Option to have in flow on medium here
-    // z-index: 100;
+    z-index: 100;
     background: $primary-color;
 }
 
@@ -100,7 +100,7 @@
     text-align: center;
     // padding: rem-calc(10 15);
     // color: $body-font-color;
-    color: #404141;
+    color: white;
 
     white-space: nowrap;
     overflow: hidden;
@@ -118,7 +118,7 @@
 //=========================================
 
 .topbar .has-dropdown:hover > a {
-    background: #DCDBDB;
+    background: darken($primary-color, 15%);
 }
 
 /* UX decision, dropdowns are fiddly on tablets */
@@ -142,10 +142,11 @@
     overflow: hidden; // so hit areas aren't triggered
     top: 100%;
     left: auto;
-    width: rem-calc(220);
-    background: #DCDBDB;
+    width: rem-calc(250);
+    background: darken($primary-color, 15%);
     margin: 0;
-    padding: rem-calc(16);
+    // padding: rem-calc(16);
+    z-index: 100;
 }
 
 .topbar > ul > li:last-child .dropdown {
@@ -167,20 +168,21 @@
 }
 
 .topbar .dropdown a {
-    border-top: 1px solid #CCCCCC;
+    // border-top: 1px solid #CCCCCC;
     margin: 0;
     text-align: left;
     transition: none;
     font-size: rem-calc(15);
+    padding: rem-calc(10 20);
 }
 
 .topbar .dropdown li:last-child a {
     // border-bottom: 0;
-    border-bottom: 1px solid #CCCCCC;
+    // border-bottom: 1px solid #CCCCCC;
 }
 
 .topbar .dropdown a:hover {
-    background: #BFBBBB;
+    background: lighten($primary-color, 5%);
     // color: white;
 }
 

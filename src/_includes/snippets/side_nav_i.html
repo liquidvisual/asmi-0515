@@ -1,11 +1,15 @@
 {% comment %}
 <!--
-    Updated: 29.05.15
+    Updated: 31.05.15
 
     - Notes -
 
     When 'top_level_id' is passed, data is pulled from requested node in /data/sitemap.yml creating nav list.
     Optional: 'exclude_top_level' can be passed through the include, skipping the top level of the side nav.
+
+    Top Level: accesses the node in the YAML.
+    Second level: opens up the list item
+    Third Level: makes the child active
 
     Basic Output:
 
@@ -50,7 +54,7 @@
             <ul class="no-bullet">
                 {% for item in item.children %}
                     <li class="{% if item.url == page.url or forloop.index == third_level_id %} active {% endif %}">
-                        <a href="{{ item.url }}">- {{ item.title }}</a>
+                        <a href="{{ item.url }}"><i class="fa fa-angle-right"></i>&nbsp; {{ item.title }}</a>
                     </li>
                 {% endfor %}
             </ul>

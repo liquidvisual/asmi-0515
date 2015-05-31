@@ -1,0 +1,179 @@
+/*
+    THEMES.CSS
+
+    - Last updated: 28.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Legacy Theme
+//-----------------------------------------------------------------
+
+body.legacy-theme {
+    background: #003399 url(../img/template/body-bg.gif) repeat-x;
+}
+
+.legacy-theme .lv-page {
+	// background: url(../img/template/legacy-bg.png) repeat-y center;
+}
+
+.legacy-theme .outer-row {
+    @media #{$medium-up} {
+        position: relative;
+        overflow: hidden;
+
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            width: 13px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            // background: $secondary-color;
+            background: url(../img/template/legacy-bg.png) repeat-y left;
+            z-index: 1;
+        }
+
+        &:after {
+            left: auto;
+            right: 0;
+            background: url(../img/template/legacy-bg.png) repeat-y right;
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------
+
+.legacy-theme .global-header {
+	// @include white-bg();
+
+
+	@media #{$large-up} {
+	    background: none;
+	}
+
+	.global-header-tagline {
+		color: $primary-color;
+	}
+}
+
+//-----------------------------------------------------------------
+// Navigation
+//-----------------------------------------------------------------
+
+.legacy-theme .global-navigation .outer-row {
+	padding: 0;
+
+	> .columns {
+		padding: rem-calc(0 13);
+	}
+}
+
+.legacy-theme .topbar {
+	background: url(../img/template/nav-bg.png) repeat-x;
+	// border-bottom: 1px solid #07334C;
+
+	> ul > li > a,
+	> ul > li > .anchor {
+		// line-height: rem-calc(44);
+		// padding: rem-calc(0 15);
+
+		&:hover {
+			background: rgba(black, 0.2);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+//  Feature Header
+//-----------------------------------------------------------------
+
+.legacy-theme .feature-section {
+	background: $light-color url(../img/template/section-shadow.png) no-repeat top center;
+	// box-shadow: inset 0px 3px 6px 0px rgba(0,0,0,0.2);
+}
+
+.legacy-theme .feature-panel-body {
+	border: 4px solid #3384CC;
+	border-top: 0;
+}
+
+.legacy-theme  .feature-panel .header {
+	background: url(../img/template/feature-header-bg.png) repeat-x;
+}
+
+// Green Bit
+
+// .legacy-theme  .feature-panel .header {
+// 	background: url(../img/template/feature-header-bg.png) repeat-x;
+// 	padding-left: 40px;
+
+// 	// width: 250px;
+// 	  white-space: nowrap;
+// 	  overflow: hidden;
+// 	  text-overflow: ellipsis;
+
+// 	&:after {
+// 		content: "";
+// 		position: absolute;
+// 		top: 0;
+// 		left: 15px;
+// 		height: 54px;
+// 		width: 74px;
+// 		background: url(../img/template/icon-nub@2x.png) no-repeat;
+// 		background-size: 74px 54px;
+// 		z-index: 1;
+// 	}
+
+// 	i {
+// 		position: relative;
+// 		left: -30px;
+// 		z-index: 2;
+// 		color: white;
+// 	}
+// }
+
+//=========================================
+//
+//=========================================
+
+.legacy-theme .global-sidebar {
+	@media #{$medium-up} {
+	    position: relative;
+	    left: -12px;
+	}
+}
+
+//-----------------------------------------------------------------
+// FOOTER
+//-----------------------------------------------------------------
+
+.legacy-theme .global-footer {
+	margin-bottom: 0;
+
+	.outer-row {
+		@media #{$large-up} {
+		    padding: rem-calc(0 25);
+		    background: $light-color;
+		}
+	}
+	.row-bg {
+		background: url(../img/template/feature-header-bg.png) repeat-x;
+		background-size: contain;
+
+		@media #{$large-up} {
+		    background: url(../img/template/nav-bg.png) repeat-x;
+		    padding: rem-calc(15 15 0 15);
+		    margin: rem-calc(15 15 0 15);
+		    overflow: hidden;
+		    border-radius: ($global-radius * 2) ($global-radius * 2) 0 0;
+		}
+	}
+}
