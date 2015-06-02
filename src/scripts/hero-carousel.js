@@ -48,6 +48,8 @@ $(function() {
     launchHeroCarousel();
 });
 
+// Keep for reference
+//
 // $('.js-carousel').slick({
 //     adaptiveHeight: true,
 //     autoplay: false,

@@ -1,7 +1,7 @@
 /*
     FOOTER.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 02.06.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -24,15 +24,12 @@
 	}
 
 	.outer-row {
-		// background: darken($primary-color, 10%);
 		padding: 0;
 	}
 
 	.row-bg {
 		padding: rem-calc(15 15 5 15);
 		background: #282828;
-		// padding: rem-calc(15 15 0 15);
-		// margin: rem-calc(15 15 0 15);
 		overflow: hidden;
 		border-radius: 0 0 ($global-radius * 2) ($global-radius * 2);
 	}

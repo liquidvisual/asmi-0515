@@ -5,86 +5,88 @@
   url: /about/
   include_children_in_nav: false
   children:
+    - title: About ASMI
+      url: "#"
     - title: Committee of Management
-      url: /about/committee-of-management/
+      url: "/about/committee-of-management/"
     - title: ASMI Secretariat
-      url: /about/asmi/secretariat/
+      url: "#"
     - title: Strategic Plan
-      url: /about/strategic-plan/
+      url: "#"
     - title: ASMI Code of Practice
       url: /about/asmi-code-of-practice/
       children:
         - title: About the ASMI Code
-          url: /about/asmi-code-of-practice/about-the-asmi-code/
+          url: "#"
         - title: ASMI Code Determinations
-          url: /about/asmi-code-of-practice/asmi-code-determinations/
+          url: "#"
         - title: Meditation Process
-          url: /about/asmi-code-of-practice/meditation-process/
+          url: "#"
 
 - title: Membership
   url: /membership/
   include_children_in_nav: false
   children:
     - title: Join ASMI
-      url: /membership/join-asmi/
+      url: "#"
     - title: ASMI Members
-      url: /membership/asmi-members/
+      url: "#"
 
 - title: Self Care
   url: /self-care/
   include_children_in_nav: false
   children:
     - title: What is Self Care?
-      url: /self-care/what-is-self-care/
+      url: "#"
     - title: Self Care Research
-      url: /self-care/self-care-research/
+      url: "#"
     - title: Life Education Partnership
-      url: /self-care/life-education-partnership/
+      url: "#"
     - title: Creating a Self Care Alliance
-      url: /self-care/creating-a-self-care-alliance/
+      url: "#"
 
 - title: "News & Information"
   url: /news-and-information/
   include_children_in_nav: false
   children:
     - title: "News / Media Releases"
-      url: /news-and-info/news-media-releases/
+      url: "#"
     - title: Annual Reports
-      url: /news-and-info/annual-reports/
+      url: "#"
     - title: Information for Consumers
-      url: /news-and-info/information-for-consumers/
+      url: "#"
     - title: "Industry Info & Services"
-      url: /news-and-info/Industry-info-and-services/
+      url: "#"
 
 - title: Events
   url: /events/
   include_children_in_nav: false
   children:
     - title: ASMI Events
-      url: /events/asmi-events/
+      url: "#"
     - title: ASMI Awards
-      url: /events/asmi-awards/
+      url: "#"
     - title: Other Industry Events
-      url: /events/other-industry-events/
+      url: "#"
     - title: ASMI Training
-      url: /events/asmi-training/
+      url: "#"
 
 - title: Advertising
   url: /advertising/
   include_children_in_nav: false
   children:
     - title: Advertising Therapeutic Goods
-      url: /advertising/advertising-therapeutic-goods/
+      url: "#"
     - title: Advertising Codes
-      url: /advertising/advertising-codes/
+      url: "#"
     - title: Advertising Approvals
-      url: /advertising/advertising-approvals/
+      url: "#"
     - title: Complaints About Advertising
-      url: /advertising/complains-about-advertising/
+      url: "#"
     - title: Promotional Monitoring Panel
-      url: /advertising/promotional-monitoring-panel/
+      url: "#"
     - title: Social Media Guidelines
-      url: /advertising/social-media-guidelines/
+      url: "#"
 
 - title: Members Only
   url: /members-only/
@@ -92,21 +94,21 @@
   include_children_in_nav: false
   children:
     - title: "Key ASMI & Industry Documents"
-      url: /members-only/key-asmi-and-industry-documents/
+      url: "#"
     - title: "Submissions & Papers"
-      url: /members-only/submissions-and-papers/
+      url: "#"
     - title: "Scientific Tech & Reg"
-      url: /members-only/scientific-tech-and-reg/
+      url: "#"
     - title: Committees
-      url: /members-only/committees/
+      url: "#"
     - title: "Call for Comment & Alerts"
-      url: /members-only/call-for-comment-and-alers/
+      url: "#"
     - title: ASMI TGAC Advertising FAQs
-      url: /members-only/asmi-tgac-advertising-faqs/
+      url: "#"
     - title: ASMI Newsletters
-      url: /members-only/asmi-newsletters/
+      url: "#"
     - title: Logout
-      url: /members-only/logout/
+      url: "#"
 
 - title: Contact Us
   url: /contact-us/

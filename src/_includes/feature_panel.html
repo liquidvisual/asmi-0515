@@ -1,6 +1,12 @@
 <div class="feature-panel">
 	<header class="header">
-		<h3><i class="fa {{ include.icon }}"></i>&nbsp; {{ include.title }}</h3>
+		<h3><i class="fa {{ include.icon }}"></i>&nbsp;
+			{% if page.sidebar_title_override %}
+			    {{ page.sidebar_title_override }}
+			{% else %}
+				{{ include.title }}
+			{% endif %}
+		</h3>
 	</header>
 
 	<!-- Text -->

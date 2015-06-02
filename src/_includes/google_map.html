@@ -23,7 +23,7 @@
             position: new google.maps.LatLng(-34.855692, 138.51113099999998)
         });
 
-        infowindow = new google.maps.InfoWindow({content:"222 Port Road, Alberton, SA 5014" });
+        infowindow = new google.maps.InfoWindow({content:"{{ settings.office_address }}" });
         google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
         infowindow.open(map,marker);}
         google.maps.event.addDomListener(window, 'load', init_map);

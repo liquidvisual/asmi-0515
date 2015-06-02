@@ -26,6 +26,7 @@ layout: master
 			<h4><a href="#">ASMI welcomes Victorian Government funding for real-time prescription monitoring system</a></h4>
 			<p>The Australian Self Medication Industry (ASMI) today welcomed the Victorian Government’s commitment of $300,000 for planning and development of a real...   <a href="/news-information/news-media-releases/asmi-welcomes-victorian-government-funding-for-real-time-prescription-monitoring-system.aspx">Read more</a></p>
 		{% endcapture %}
+		{% comment %} Feed the above into the include below through "body" variable {% endcomment %}
 		{% include feature_panel.html title="Latest News" icon="fa-newspaper-o" body=body %}
 	</div>
 	<div class="medium-6 large-4 columns">
@@ -34,14 +35,16 @@ layout: master
 			<p>ASMI has developed face-to-face training seminars on the Therapeutic Goods Advertising Code, and surrounding regulatory framework. These have replaced the TGACC seminar series, which were discontinued in 2013.   For this year's schedule of seminars, click here.</p>
 			<hr>
 			<h4>ASMI Annual Conference and AGM</h4>
-			<p>SAVE THE DATE: The 2015 ASMI AGM, Annual Conference & Diamond Awards Dinner on Wednesday 11 November 2015 in Sydney At the Waterview Convention Centre.</p>
+			<p>SAVE THE DATE: The 2015 ASMI AGM, Annual Conference &amp; Diamond Awards Dinner on Wednesday 11 November 2015 in Sydney At the Waterview Convention Centre.</p>
 		{% endcapture %}
+		{% comment %} Feed the above into the include below through "body" variable {% endcomment %}
 		{% include feature_panel.html title="Events & Training" icon="fa-rss" body=body %}
 	</div>
 	<div class="medium-12 large-4 columns">
 		{% capture body %}
 			<a width="100%" class="twitter-timeline" href="https://twitter.com/ASMInews" data-chrome="noborders" data-widget-id="603975670960529408">Tweets by @ASMInews</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		{% endcapture %}
+		{% comment %} Feed the above into the include below through "body" variable {% endcomment %}
 		{% include feature_panel.html title="Twitter" icon="fa-twitter" body=body %}
 	</div>
 </section>

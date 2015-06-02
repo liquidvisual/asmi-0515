@@ -1,7 +1,7 @@
 /*
-    SPECIAL.CSS - Refactor Later
+    SPECIAL.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 02.05.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -15,9 +15,9 @@
     color: $primary-color;
 }
 
-//=========================================
-// Google Map Patch
-//=========================================
+//-----------------------------------------------------------------
+// Google Map Patch (contact)
+//-----------------------------------------------------------------
 
 .google-map {
     width: 100%;
@@ -32,9 +32,9 @@
     pointer-events: none;
 }
 
-//=========================================
-//
-//=========================================
+//-----------------------------------------------------------------
+// Twitter Widget (homepage)
+//-----------------------------------------------------------------
 
 .twitter-timeline[style] {
     width: 100% !important;
@@ -43,4 +43,18 @@
 
 .customisable-border {
     border: medium none;
+}
+
+//-----------------------------------------------------------------
+// Fix Tabs Distracting Outline (news)
+//-----------------------------------------------------------------
+
+/* What gives, Webkit?! */
+.lv-super .accordion,
+.lv-super .accordion *,
+.lv-super .accordion a,
+.lv-super .tabs a,
+.lv-super .tabs-content .content ,
+.lv-super .tabs-content .content * {
+    outline: none !important;
 }

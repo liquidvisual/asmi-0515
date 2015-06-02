@@ -1,0 +1,47 @@
+---
+layout: internal
+---
+
+{% assign news = site.data.articles %}
+
+<h4>Media Contact</h4>
+
+<p>Marie Kelly-Davies, ASMI Communications Manager<br>
+P: <a href="tel:0299239410">02 9923 9410</a><br>
+Email: <a href="mailto:marie@asmi.com.au">marie@asmi.com.au</a> <br>
+<a href="http://www.asmi.com.au">www.asmi.com.au</a> <br>
+Twitter: @ASMRNEWS</p>
+
+<dl class="tabs" data-tab>
+    <dd class="active"><a href="#panel1">Current Releases</a></dd>
+    <dd><a href="#panel2">2014</a></dd>
+    <dd><a href="#panel3">2013</a></dd>
+    <dd><a href="#panel4">2012</a></dd>
+    <dd><a href="#panel5">2011</a></dd>
+    <dd><a href="#panel6">2010</a></dd>
+</dl>
+
+<div class="tabs-content">
+    <div class="content active" id="panel1">
+
+        <!-- News Articles -->
+        <div class="media-articles">
+        	{% for item in news %}
+        		{% include media_article.html %}
+        	{% endfor %}
+        </div>
+
+        <!-- Pagination Controls -->
+        {% include snippets/pagination.html %}
+
+    </div>
+    <div class="content" id="panel2">
+        <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+    </div>
+    <div class="content" id="panel3">
+        <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+    </div>
+    <div class="content" id="panel4">
+        <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+    </div>
+</div>

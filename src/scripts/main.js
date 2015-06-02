@@ -1,12 +1,9 @@
 /*
-    MAIN SCRIPTS - Last updated: 00-00-00
+    MAIN SCRIPTS - Last updated: 02.06.15
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
-
-var TOUCH_ENABLED = $(".touch").length;
-
 //-----------------------------------------------------------------
 // Document Ready
 //-----------------------------------------------------------------
@@ -19,10 +16,6 @@ $(window).load(function() {
     NProgress.done();
 });
 
-// window.onload = function(){
-//     // NProgress.done();
-// }
-
 //-----------------------------------------------------------------
 // Offcanvas Menu
 //-----------------------------------------------------------------
@@ -30,49 +23,39 @@ $(window).load(function() {
 $("#off-canvas-menu").mmenu({ "offCanvas": { "position": "right" }});
 
 //-----------------------------------------------------------------
-// Kickstart Foundation / Touch Conditionals
+// Hamburger Trigger
 //-----------------------------------------------------------------
 
-// var touchEvent = TOUCH_ENABLED ? "touchstart" : "click";
-
-//Trigger hamburger by touch on mobile - this eliminates glitch with FastClick.js
 $('.hamburger').bind('click', function(e) {
     e.preventDefault();
     $('#off-canvas-menu').trigger('open.mm');
 });
 
-if (TOUCH_ENABLED) {
-    // Make Accordion jump to the top of the heading on mobile
-    // http://foundation.zurb.com/forum/posts/1316-accordion-jump-to-top-when-active
-    /*$(document).foundation('accordion', {
-        callback: function (el){
-            var containerPos = $(el).parent().offset().top;
-            $('html, body').animate({ scrollTop: containerPos }, 300);
-        }
-    });*/
-}
 //-----------------------------------------------------------------
 // <= IE8 Caution Message
 //-----------------------------------------------------------------
 
-//$('.lv-alert .close-btn').click(function(){$(this).parent().hide();});
+$('.lv-alert .close-btn').click(function(){$(this).parent().hide();});
 
 //-----------------------------------------------------------------
 // +++ HELPERS +++
 //-----------------------------------------------------------------
 //==================================================
-// Developer: COMMAND+S for screen width
+// Developer: COMMAND+S for theme swap - see site index for info
 //==================================================
 
-$(document).keypress(function(event) {
-    if (event.which == 115 && (event.ctrlKey||event.metaKey)||(event.which == 19)) {
-        event.preventDefault();
-        $('body').toggleClass('legacy-theme');
-        // alert("(w) "+$(window).width()+" (h) "+$(window).height());
-        return false;
-    }
-    return true;
-});
+if ($('.dev-mode-enabled').length) {
+    $(document).keydown(function(event) {
+        // If Control or Command key is pressed and the S key is pressed
+        // run save function. 83 is the key code for S.
+        if ((event.ctrlKey || event.metaKey) && event.which == 83) {
+            event.preventDefault();
+            $('body').toggleClass('legacy-theme');
+            return false;
+        }
+    });
+}
+
 //==================================================
 //
 //==================================================

@@ -67,6 +67,11 @@ $header-height-medium: rem-calc(110);
 //-----------------------------------------------------------------
 
 .global-header .logo {
+	position: relative;
+
+	@media #{$medium-up} {
+	    top: 3px;
+	}
 
 	img {
 		width: rem-calc(200);

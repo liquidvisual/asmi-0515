@@ -1,0 +1,28 @@
+---
+layout: internal
+---
+
+{{ content }}
+
+<h2>Officers of the Association 2014-15</h2>
+
+<section class="media-articles">
+
+	{% for i in (1..3) %}
+		<article class="media-article">
+			<div class="row">
+				<div class="medium-3 columns">
+					<img width="220" src="/img/ui/no-face.png">
+				</div>
+				<div class="medium-9 columns">
+					<h3>Mark Sargent</h3>
+					<p><strong class="subheader uppercase">President</strong></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation.</p>
+				</div>
+			</div>
+		</article>
+	{% endfor %}
+
+</section> <!-- .media-articles -->
