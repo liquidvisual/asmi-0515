@@ -45,6 +45,13 @@
     border: medium none;
 }
 
+/* Twitter slows mobile down */
+.twitter-panel {
+    @media #{$small-only} {
+        display: none;
+    }
+}
+
 //-----------------------------------------------------------------
 // Fix Tabs Distracting Outline (news)
 //-----------------------------------------------------------------

@@ -18,6 +18,8 @@ layout: master
 
 <!-- FEATURE SECTION -->
 <section class="feature-section row outer-row">
+
+	<!-- Feature 1 -->
 	<div class="medium-6 large-4 columns">
 		{% capture body %}
 			<h4><a href="#">ASMI supports real-time monitoring of OTC codeine containing analgesics</a></h4>
@@ -29,6 +31,8 @@ layout: master
 		{% comment %} Feed the above into the include below through "body" variable {% endcomment %}
 		{% include feature_panel.html title="Latest News" icon="fa-newspaper-o" body=body %}
 	</div>
+
+	<!-- Feature 2 -->
 	<div class="medium-6 large-4 columns">
 		{% capture body %}
 			<h4>TGAC Training Seminars are back</h4>
@@ -40,11 +44,14 @@ layout: master
 		{% comment %} Feed the above into the include below through "body" variable {% endcomment %}
 		{% include feature_panel.html title="Events & Training" icon="fa-rss" body=body %}
 	</div>
+
+	<!-- Feature 3 -->
 	<div class="medium-12 large-4 columns">
 		{% capture body %}
 			<a width="100%" class="twitter-timeline" href="https://twitter.com/ASMInews" data-chrome="noborders" data-widget-id="603975670960529408">Tweets by @ASMInews</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		{% endcapture %}
 		{% comment %} Feed the above into the include below through "body" variable {% endcomment %}
-		{% include feature_panel.html title="Twitter" icon="fa-twitter" body=body %}
+		{% include feature_panel.html title="Twitter" icon="fa-twitter" class="twitter-panel" body=body %}
 	</div>
+
 </section>

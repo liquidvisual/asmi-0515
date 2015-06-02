@@ -52,6 +52,10 @@ $header-height-medium: rem-calc(110);
 		font-weight: bold;
 		background: lighten($primary-color, 15%);
 		margin-bottom: 0;
+
+		&:hover {
+			background: lighten($primary-color, 20%);
+		}
 	}
 
 	.global-header-tagline {
@@ -59,6 +63,10 @@ $header-height-medium: rem-calc(110);
 		font-style: italic;
 		font-weight: 600;
 		color: grey;
+
+		@media #{$medium-only} {
+		    padding-top: rem-calc(5);
+		}
 	}
 }
 

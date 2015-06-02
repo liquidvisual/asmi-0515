@@ -9,10 +9,6 @@ The public facing site is currently located at:
 
 This project is built with [Jekyll 2.5.3](http://jekyllrb.com) - a static site generator. It also uses [Grunt.js](http://gruntjs.com) - a JavaScript task runner and [Bower](http://bower.io) for package management. This workflow was scaffolded with a tweaked [Yeoman](http://yeoman.io) generator called [generator-jekyllrb](https://github.com/robwierzbowski/generator-jekyllrb) which automates the process of setting it all up.
 
-The repo for all the source files are found here:
-
-[https://github.com/liquidvisual/asmi-0515](https://github.com/liquidvisual/asmi-0515)
-
 ### On Mac:
 
 You may need to install Ruby, Ruby Gems, NodeJS & Git. There are detailed instructions on the [Jekyll](http://jekyllrb.com/docs/installation/) website.

@@ -80,6 +80,10 @@ body.legacy-theme {
 	background: url(../img/template/nav-bg.png) repeat-x;
 	// border-bottom: 1px solid #07334C;
 
+	// > ul > li.active > a {
+	// 	background: rgba($secondary-color, 0.9);
+	// }
+
 	> ul > li > a,
 	> ul > li > .anchor {
 		// line-height: rem-calc(44);

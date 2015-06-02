@@ -35,8 +35,13 @@
 	}
 
 	p, a {
+		@include transition();
 		color: white;
 		font-size: rem-calc(12);
+	}
+
+	a:hover {
+		color: $tertiary-color;
 	}
 }
 
