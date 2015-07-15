@@ -42,7 +42,7 @@ The online repo that stores the build folder named **/dist** (generated from /sr
 
 Feel free to use it as a reference. Although it's advantageous to know how the source files are organised since the structure aims to mimic a back-end environment with proper template inheritance. Many templating questions have already been solved and this can be a benefit if you draw from the source as well as the final compiled **build** directory.
 
-Once you get the hang of reading Jekyll templates - you'll be able to breeze through, copy-pasting everything and substituting the basic templating syntax for your own. 
+Once you get the hang of reading Jekyll templates - you'll be able to breeze through, copy-pasting everything and substituting the basic templating syntax for your own.
 
 ---
 
@@ -62,7 +62,7 @@ Start with this and substitute the template logic for your own. When it comes to
 
 You can replace this:
 
-    <!-- build:css /assets/css/optimized.css -->
+    <!-- build:css /assets/css/minified.css -->
       <link rel="stylesheet" href="/css/some-css-file.css">
       <link rel="stylesheet" href="/css/some-css-file.css">
       <link rel="stylesheet" href="/css/some-css-file.css">
@@ -72,13 +72,13 @@ You can replace this:
 
 With this:
 
-    <link rel="stylesheet" href="/assets/css/optimized.css">
+    <link rel="stylesheet" href="/assets/css/minified.css">
 
 The same applies to Javascript. That's probably the trickiest bit that's not so obvious. The end result will look like this:
 
-    <script src="/scripts/priority-optimized.js"></script> <!-- In the head -->
+    <script src="/scripts/priority-minified.js"></script> <!-- In the head -->
 
-    <script src="/scripts/optimized.js"></script> <!-- Before closing body -->
+    <script src="/scripts/minified.js"></script> <!-- Before closing body -->
 
 ### 03. Copy Over Partials in /_includes
 
